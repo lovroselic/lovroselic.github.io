@@ -5,15 +5,15 @@
 </head>
 
 <body>
-    <p>Random value is <span id="rnd"></span></p>
+    <p>Random value is <span id="rnd">#####<</span></p>
 
     <script>
         function RND(start, end) {
             return Math.floor(Math.random() * (++end - start) + start);
         }
-        console.log("rnd 0.6");
-        let secret = 1235;
-        let rnd = RND(1000, 9999) * secret;
+        console.log("rnd 0.7");
+        let secret = 1158;
+        let rnd = RND(100, 999) * secret;
         console.log("rnd", rnd, rnd / secret);
         document.getElementById("rnd").innerHTML = rnd;
     </script>
