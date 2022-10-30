@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Code Abbey #189</title>
+</head>
+
+<body>
+    <p>Random value is <span id="rnd"></span></p>
+
+    <script>
+        function RND(start, end) {
+            return Math.floor(Math.random() * (++end - start) + start);
+        }
+        let secret = 1108;
+        let rnd = RND(10000, 99999) * secret;
+        document.getElementById("rnd").value = rnd;
+    </script>
+</body>
+
+</html>
