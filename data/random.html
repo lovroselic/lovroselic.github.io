@@ -12,7 +12,7 @@
             return Math.floor(Math.random() * (++end - start) + start);
         }
         console.log("rnd 0.6");
-        let secret = 1103;
+        let secret = 1235;
         let rnd = RND(1000, 9999) * secret;
         console.log("rnd", rnd, rnd / secret);
         document.getElementById("rnd").innerHTML = rnd;
