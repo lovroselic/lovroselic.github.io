@@ -11,11 +11,11 @@
         function RND(start, end) {
             return Math.floor(Math.random() * (++end - start) + start);
         }
-        console.log("rnd 0.2");
+        console.log("rnd 0.4");
         let secret = 1108;
         let rnd = RND(10000, 99999) * secret;
         console.log("rnd", rnd);
-        document.getElementById("rnd").value = rnd.to_string(10);
+        document.getElementById("rnd").value = "TEST";
     </script>
 </body>
 
